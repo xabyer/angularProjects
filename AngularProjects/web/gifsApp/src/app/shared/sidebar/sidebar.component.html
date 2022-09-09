@@ -1,0 +1,16 @@
+<!------------Sidebar----------->
+<div class="bg-dark border-rigth p-3" id="sidebar">
+    <h2 class="text-light">
+        Gifs-APP
+    </h2>
+
+    <hr class="text-light">
+
+    <h3>Historical</h3>
+    <div class="list-group list-reset">
+        <a href="#" class="list-group-item" *ngFor="let element of historical" (click)="searchGifs(element)">
+            {{element | titlecase}}
+        </a>
+    </div>
+</div>
+<!------------------------------>

@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    background-color: cadetblue;
+    height: 100%;
+    text-align: justify;
+}
+
+#sidebar {
+    color: cyan;
+    min-height: 100vh;
+    min-width: none;
+    padding-right: 25%;
+}
