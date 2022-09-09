@@ -1,0 +1,65 @@
+<div *ngIf="!country; else divCountry">
+    <h1>
+        <span class="loading let1">l</span>  
+        <span class="loading let2">o</span>  
+        <span class="loading let3">a</span>  
+        <span class="loading let4">d</span>  
+        <span class="loading let5">i</span>  
+        <span class="loading let6">n</span>  
+        <span class="loading let7">g</span> 
+    </h1>
+</div>
+
+<ng-template #divCountry>
+    <div class="row">
+        <div class="col-12">
+            <h2 class="text-center">Country: <small>{{country.name}}</small></h2>
+        </div>
+    </div>
+
+    <div class="row mt-4 ml-5">
+        <div class="col-6">
+            <h3>Flag</h3>
+            <img src="{{country.flag}}" alt="" class="medium-flag">
+        </div>
+
+        <div class="col">
+            <h3>Information</h3>
+            <ul class="list-group text-justify">
+                <li class="list-group-item">
+                    <strong>Population</strong>     {{ country.population | number}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Numeric code</strong>   {{ country.numericCode | number}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Contry Code 3</strong>  {{ country.alpha3Code}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Contry Code 2</strong>  {{ country.alpha2Code}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Region</strong>  {{ country.region}}
+                </li>
+                <li class="list-group-item">
+                    <strong>Subregion</strong>  {{ country.subregion}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <h3>Translations</h3>
+        <div class="col">
+            <span class="bg-dark pills">German <strong class="badge bg-secondary">{{ country.translations.de }}</strong></span>
+            <span class="bg-dark pills">Spanish <strong class="badge bg-secondary">{{ country.translations.es }}</strong></span>
+            <span class="bg-dark pills">French <strong class="badge bg-secondary">{{ country.translations.fr }}</strong></span>
+            <span class="bg-dark pills">Japanese <strong class="badge bg-secondary">{{ country.translations.ja }}</strong></span>
+            <span class="bg-dark pills">Italian <strong class="badge bg-secondary">{{ country.translations.it }}</strong></span>
+            <span class="bg-dark pills">Brazilian <strong class="badge bg-secondary">{{ country.translations.br }}</strong></span>
+            <span class="bg-dark pills">Portuguese <strong class="badge bg-secondary">{{ country.translations.pt }}</strong></span>
+            <span class="bg-dark pills">Dutch <strong class="badge bg-secondary">{{ country.translations.nl }}</strong></span>
+            <span class="bg-dark pills">Croatian <strong class="badge bg-secondary">{{ country.translations.hr }}</strong></span>
+        </div>
+    </div>
+</ng-template>

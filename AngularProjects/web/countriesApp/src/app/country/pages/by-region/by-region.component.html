@@ -1,0 +1,21 @@
+<h2 class="text-center">By Region</h2>
+<hr>
+
+<h5>Selected Active Region {{ activeRegion | titlecase }}</h5>
+
+<div class="row">
+    <div class="col">
+        <button *ngFor="let region of regions"
+                class="btn btn-outline-dark"
+                [ngClass]="getClassCSS( region) "
+                (click) = "activateRegion( region )">
+            {{ region | titlecase }}
+        </button>
+    </div>
+</div>
+
+<div *ngIf="countries.length > 0" class="row">
+    <div class="col">
+        <app-table-countries [countries]="countries"></app-table-countries>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient(to right, #ff9966, #ff5e62);
+}
+
+hr{
+    background-color: #849974;
+    border: 2px black solid;
+    border-radius: 6px;
+    height: 6px;
+    
+}
+
+.small-flag {
+    width: 50px;
+    border-radius: 4px;
+}
+
+.medium-flag{
+    width: 75%;
+    border-radius: 5px;
+ }
+
+ .list-group {
+    --bs-list-group-active-bg: #021025;
+    --bs-list-group-active-border-color: #021025;
+ }
