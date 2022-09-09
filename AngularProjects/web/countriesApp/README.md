@@ -26,7 +26,7 @@ Application that makes a HTTP request to a country API for information about the
 
 ### Beta Version
 
-(CountriesAPP)[https://sweet-salmiakki-409656.netlify.app/]
+[CountriesAPP](https://sweet-salmiakki-409656.netlify.app/)
 
 **Note**, I do not consider the application finished because of the things that remain to be done. However, the programming logic and functionality of the APP are finished.
 
