@@ -14,9 +14,9 @@ Application that makes a HTTP request to a country API for information about the
 
 2. Use of a service for communication between the different components.
 
-3. Angular routes, RouterLink y RouterLinkActive.
+3. Angular routes, RouterLink and RouterLinkActive.
 
-4. Autocompletion in the search programmed with RxJS ( Debouncer and DebounceTime ).
+4. Autocompletion in the search programmed with RxJS ( DebounceTime ).
 
 5. HTTP request handling with SwitchMap thanks to RxJS library.
 
