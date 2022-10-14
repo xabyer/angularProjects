@@ -23,11 +23,11 @@ const routes: Routes = [
                 component: AddComponent
             },
             {
-                path: 'heroes-list',
+                path: 'list',
                 component: HeroesListComponent
             },
             {
-                path: 'heroe-search',
+                path: 'search',
                 component: SearchComponent
             },
             {
@@ -36,7 +36,7 @@ const routes: Routes = [
             },
             {
                 path: '**',
-                redirectTo: 'heroes-list'
+                redirectTo: 'list'
             }
         ]
     }
